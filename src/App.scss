@@ -131,10 +131,8 @@ body{
   }
 
   .customcolorssection{
-    border-bottom: 2px solid gray;
-    h2{
-      margin: 5px;
-    }
+    border-top: 2px solid gray;
+    padding-top: 5px;
     .colorinputs{
       display: flex;
       justify-content: center;
@@ -158,6 +156,7 @@ body{
       button{
         background: transparent;
         border-radius: 10px;
+        width: 98%;
       }
     }
   }

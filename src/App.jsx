@@ -21,11 +21,11 @@ export default function App() {
     <div style={{backgroundColor: themeColor}}>
         <CardsSection primaryColor={primaryColor} secondaryColor={secondaryColor} 
                       contrastRatio={contrastRatio}/>
+        <CustomColors themeColor={themeColor} setPrimaryColor={setPrimaryColor} 
+                      setSecondaryColor={setSecondaryColor}/>
         <SettingsSection themeColor={themeColor} backgroundButtonState={backgroundButtonState} 
                          iconButtonState={iconButtonState} setBackgroundButtonState={setBackgroundButtonState} 
                          setIconButtonState={setIconButtonState} setThemeColor={setThemeColor}/>
-        <CustomColors themeColor={themeColor} setPrimaryColor={setPrimaryColor} 
-                      setSecondaryColor={setSecondaryColor}/>
         <PalleteNames themeColor={themeColor}/>
         <Palette pallete={pallete} backgroundButtonState={backgroundButtonState} 
                  setPrimaryColor={setPrimaryColor} setSecondaryColor={setSecondaryColor}/>

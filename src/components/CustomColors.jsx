@@ -7,9 +7,6 @@ export const CustomColors = ( { themeColor, setPrimaryColor, setSecondaryColor }
   
   return (
     <div className="customcolorssection">
-      <h2 style={{color: themeColor === "#1E1E20"
-                          ? 'white'
-                          : 'black'}}>CustomColors</h2>
       <div className="colorinputs">
         <div className="customcolor customcolor_one">
           <p style={{color: themeColor === "#1E1E20"
