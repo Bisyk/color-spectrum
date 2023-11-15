@@ -1,4 +1,7 @@
 body{
+  button{
+    cursor: pointer;
+  }
   .cardswrapper{
     display: flex;
     justify-content: space-between;
@@ -64,9 +67,6 @@ body{
     border-top: 2px solid #767676;
     border-bottom: 2px solid #767676;
     padding: 20px 20px;
-      button{
-        cursor: pointer;
-      }
       .settingsbuttons{
         min-width: 320px;
         display: flex;
@@ -89,7 +89,8 @@ body{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gray;
     div{
       display: flex;
       flex-direction: column;
@@ -126,6 +127,38 @@ body{
       display: inline-block;
       text-align: center;
       font-weight: bold;
+    }
+  }
+
+  .customcolorssection{
+    border-bottom: 2px solid gray;
+    h2{
+      margin: 5px;
+    }
+    .colorinputs{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5px;
+      
+      input{
+        min-width: 159.806px;
+        height: 70px;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+      }
+      .customcolor{
+        display: flex;
+        flex-direction: column;
+      }
+      p{
+        margin: 0;
+        text-align: center;
+      }
+      button{
+        background: transparent;
+        border-radius: 10px;
+      }
     }
   }
 }
