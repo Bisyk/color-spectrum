@@ -24,7 +24,8 @@ export default function App() {
         <SettingsSection themeColor={themeColor} backgroundButtonState={backgroundButtonState} 
                          iconButtonState={iconButtonState} setBackgroundButtonState={setBackgroundButtonState} 
                          setIconButtonState={setIconButtonState} setThemeColor={setThemeColor}/>
-        <CustomColors setPrimaryColor={setPrimaryColor} setSecondaryColor={setSecondaryColor}/>
+        <CustomColors themeColor={themeColor} setPrimaryColor={setPrimaryColor} 
+                      setSecondaryColor={setSecondaryColor}/>
         <PalleteNames themeColor={themeColor}/>
         <Palette pallete={pallete} backgroundButtonState={backgroundButtonState} 
                  setPrimaryColor={setPrimaryColor} setSecondaryColor={setSecondaryColor}/>

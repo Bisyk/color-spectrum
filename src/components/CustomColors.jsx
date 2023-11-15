@@ -1,23 +1,43 @@
 import { useState } from "react"
 
-export const CustomColors = ( {setPrimaryColor, setSecondaryColor} ) => {
+export const CustomColors = ( { themeColor, setPrimaryColor, setSecondaryColor } ) => {
   const [firstColor, setFirstColor] = useState('#000000')
   const [secondColor, setSecondColor] = useState('#000000')
 
   
   return (
     <div className="customcolorssection">
-      <h2>CustomColors</h2>
+      <h2 style={{color: themeColor === "#1E1E20"
+                          ? 'white'
+                          : 'black'}}>CustomColors</h2>
       <div className="colorinputs">
         <div className="customcolor customcolor_one">
-          <p>background</p>
+          <p style={{color: themeColor === "#1E1E20"
+                          ? 'white'
+                          : 'black'}}>background</p>
           <input type="color" id="head" name="head" onChange={e=>setFirstColor(e.target.value)}/>
-          <button onClick={()=>setPrimaryColor(firstColor)}>Apply</button>
+          <button onClick={()=>setPrimaryColor(firstColor)} 
+                  style={{
+                    color: themeColor === "#1E1E20"
+                    ? 'white'
+                    : 'black',
+                    borderColor: themeColor === "#1E1E20"
+                    ? 'white'
+                    : 'black'}}>Apply</button>
         </div>
         <div className="customcolor customcolor_two">
-          <p>icon & text</p>
+          <p style={{color: themeColor === "#1E1E20"
+                          ? 'white'
+                          : 'black'}}>icon & text</p>
           <input type="color" id="body" name="body" onChange={e=>setSecondColor(e.target.value)}/>
-          <button onClick={()=>setSecondaryColor(secondColor)}>Apply</button>
+          <button onClick={()=>setSecondaryColor(secondColor)}
+                  style={{
+                  color: themeColor === "#1E1E20"
+                  ? 'white'
+                  : 'black',
+                  borderColor: themeColor === "#1E1E20"
+                  ? 'white'
+                  : 'black'}}>Apply</button>
         </div>
       </div>
     </div>
