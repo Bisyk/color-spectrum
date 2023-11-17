@@ -11,8 +11,8 @@ import { CustomColors } from './components/CustomColors'
 export default function App() {
   const [backgroundButtonState, setBackgroundButtonState] = useState('active')
   const [iconButtonState, setIconButtonState] = useState('inactive')
-  const [primaryColor, setPrimaryColor] = useState('#ffffff')
-  const [secondaryColor, setSecondaryColor] = useState('#000000')
+  const [primaryColor, setPrimaryColor] = useState('#000000')
+  const [secondaryColor, setSecondaryColor] = useState('#ffffff')
   const [themeColor, setThemeColor] = useState('white')
 
   const contrastRatio = getContrastRatio(primaryColor, secondaryColor)
