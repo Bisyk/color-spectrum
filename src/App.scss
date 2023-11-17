@@ -1,15 +1,15 @@
-body{
-  button{
+body {
+  button {
     cursor: pointer;
   }
-  .cardswrapper{
+  .cardswrapper {
     display: flex;
     justify-content: space-between;
-    .card__wrapper{
+    .card__wrapper {
       width: 50%;
       padding: 20px 0px;
       display: flex;
-      .card{
+      .card {
         width: 350px;
         height: 200px;
         border-radius: 50px;
@@ -19,141 +19,147 @@ body{
         align-items: center;
         padding: 15px;
       }
-      .checkinfo{
+      .checkinfo {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        p{
+        p {
           display: flex;
           align-items: center;
         }
-        .checktext{
+        .checktext {
           padding-left: 10px;
-          font-family: 'Poppins', sans-serif;
+          font-family: "Poppins", sans-serif;
           font-weight: 700;
         }
       }
-      .checkinfo__dark{
+      .checkinfo__dark {
         color: white;
       }
     }
-    .card_one__wrapper{
+    .card_one__wrapper {
       background-color: white;
       position: relative;
     }
-    .card_two__wrapper{
+    .card_two__wrapper {
       background-color: black;
       position: relative;
     }
-    .contrasrRatio{
+    .contrastratio {
       position: absolute;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 50%;
       z-index: 1;
-      left: 350px;
-      top: 50px;
+      left: 45%;
+      top: 20%;
       width: 50px;
       height: 50px;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       font-weight: 700;
     }
   }
-  
+
   .buttons {
     display: flex;
     justify-content: space-between;
     border-top: 2px solid #767676;
     border-bottom: 2px solid #767676;
     padding: 20px 20px;
-      .settingsbuttons{
-        min-width: 320px;
-        display: flex;
-        justify-content: space-around;
-        button {
-          width: 150px;
-          height: 60px;
-          border-radius: 15px;
-          background-color: transparent;
-          font-family: 'Poppins', sans-serif;
-          font-weight: 700;
-        }
-      }
-      .cleanbutton{
+    .settingsbuttons {
+      min-width: 320px;
+      display: flex;
+      justify-content: space-around;
+      button {
+        width: 150px;
+        height: 60px;
+        border-radius: 15px;
         background-color: transparent;
-        border: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
       }
+    }
+    .cleanbutton {
+      background-color: transparent;
+      border: none;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .themebutton{
+      min-width: 32px;
+    }
   }
-  .colors{
+  .colors {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 10px;
     padding-bottom: 5px;
     border-bottom: 2px solid gray;
-    div{
+    div {
       display: flex;
       flex-direction: column;
     }
-    button{
+    button {
       border: none;
-      width: max(100px,100%);
+      max-width: max(100px, 100%);
       height: 70px;
-      padding: 0;}
-    .bwsection button{
+      padding: 0px;
+    }
+    .bwsection button {
       padding: 0;
       height: 25%;
     }
-    .bwsection{
+    .bwsection {
       border: 2px solid black;
     }
   }
 
-  .active{
+  .active {
     border: 3px solid;
   }
-  .inactive{
+  .inactive {
     border: 2px solid;
   }
-  h2{
+  h2 {
     text-align: center;
   }
 
-  .palletenames{
+  .palletenames {
     display: grid;
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(10, 1fr);
     justify-content: space-between;
-    p{
+    p {
       display: inline-block;
       text-align: center;
       font-weight: bold;
     }
   }
 
-  .customcolorssection{
+  .customcolorssection {
     border-top: 2px solid gray;
     padding-top: 5px;
-    .colorinputs{
+    .colorinputs {
       display: flex;
       justify-content: center;
       padding-bottom: 5px;
-      
-      input{
+
+      input {
         min-width: 159.806px;
         height: 70px;
         border: none;
         background-color: transparent;
         padding: 0;
       }
-      .customcolor{
+      .customcolor {
         display: flex;
         flex-direction: column;
       }
-      p{
+      p {
         margin: 0;
         text-align: center;
       }
-      button{
+      button {
         background: transparent;
         border-radius: 10px;
         width: 98%;

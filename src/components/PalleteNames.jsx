@@ -1,10 +1,9 @@
-
 export const PalleteNames = ({ themeColor }) => {
   return (
-    <div className="palletenames"
-          style={{color: themeColor === "#1E1E20"
-                  ? 'white'
-                  : 'black'}}>
+    <div
+      className="palletenames"
+      style={{ color: themeColor === "#1E1E20" ? "white" : "black" }}
+    >
       <p>B/W</p>
       <p>Cloud</p>
       <p>Grape</p>
@@ -16,5 +15,5 @@ export const PalleteNames = ({ themeColor }) => {
       <p>Apple</p>
       <p>Pig</p>
     </div>
-  )
-}
+  );
+};
