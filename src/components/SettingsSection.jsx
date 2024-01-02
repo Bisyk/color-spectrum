@@ -10,6 +10,7 @@ export const SettingsSection = ({
   setBackgroundButtonState,
   setIconButtonState,
   setThemeColor,
+  onModalOpen,
 }) => {
   const handleBackgroundButtonStateChange = () => {
     if (backgroundButtonState !== "active") {
@@ -26,7 +27,7 @@ export const SettingsSection = ({
   };
   return (
     <div className="buttons">
-      <button className="cleanbutton">
+      <button className="cleanbutton" onClick={onModalOpen}>
         {<InfoIcon color={themeColor === "#1E1E20" ? "white" : "black"} />}
       </button>
       <div className="settingsbuttons">
