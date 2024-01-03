@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ColorButton = ({ color, backgroundButtonState, setPrimaryColor, setSecondaryColor }) => {
   const handleClick = () => {
     if (backgroundButtonState === 'active') {
