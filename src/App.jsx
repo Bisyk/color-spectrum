@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 import "./App.scss";
 import { CardsSection } from "./components/CardsSection/CardsSection";
 import { SettingsSection } from "./components/SettingsSection/SettingsSection";
-import { Palette } from "./components/Pallete/Palette";
+import Palette from "./components/Pallete/Palette";
 import { PalleteNames } from "./components/PalleteNames/PalleteNames";
 import { CustomColors } from "./components/CustomColors/CustomColors";
 import { InfoModal } from "./components/InfoModal/InfoModal";
 
 import getContrastRatio from "./utils/getContrastRatio";
-import * as pallete from "./data/pallete";
+
 
 export default function App() {
   const [backgroundButtonState, setBackgroundButtonState] = useState("active");
@@ -20,6 +20,14 @@ export default function App() {
   const [modalIsOpen, setModalOpen] = useState(false);
 
   const contrastRatio = getContrastRatio(primaryColor, secondaryColor);
+
+  // const handlePrimaryColor = useCallback((color) =>{
+  //   setPrimaryColor(color)
+  // },[])
+
+  // const handleSecondaryColor = useCallback((color) =>{
+  //   setSecondaryColor(color)
+  // },[])
 
   const toggleModalOpen = () => {
     setModalOpen((isModalOpen) => !isModalOpen);
@@ -44,7 +52,6 @@ export default function App() {
       />
       <PalleteNames themeColor={themeColor} />
       <Palette
-        pallete={pallete}
         backgroundButtonState={backgroundButtonState}
         setPrimaryColor={setPrimaryColor}
         setSecondaryColor={setSecondaryColor}

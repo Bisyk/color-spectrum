@@ -1,12 +1,14 @@
-import ColorButton from "../../ui/buttons/ColorButton";
-import './Pallete.scss'
+import { memo } from "react";
 
-export const Palette = ({
-  pallete,
+import ColorButton from "../../ui/buttons/ColorButton";
+import "./Pallete.scss";
+import * as pallete from "../../data/pallete";
+
+const Palette = memo(function Palette ({
   backgroundButtonState,
   setPrimaryColor,
   setSecondaryColor,
-}) => {
+}){
   return (
     <div className="colors">
       <div className="bwsection">
@@ -121,4 +123,6 @@ export const Palette = ({
       </div>
     </div>
   );
-};
+})
+
+export default Palette
