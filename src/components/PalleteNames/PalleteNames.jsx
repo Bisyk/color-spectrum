@@ -1,3 +1,5 @@
+import './PalleteNames.scss'
+
 export const PalleteNames = ({ themeColor }) => {
   return (
     <div

@@ -1,0 +1,29 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #767676;
+  border-bottom: 2px solid #767676;
+  padding: 20px 20px;
+  .settingsbuttons {
+    min-width: 320px;
+    display: flex;
+    justify-content: space-around;
+    button {
+      width: 150px;
+      height: 60px;
+      border-radius: 15px;
+      background-color: transparent;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+    }
+  }
+  .cleanbutton {
+    background-color: transparent;
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .themebutton {
+    min-width: 32px;
+  }
+}

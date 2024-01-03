@@ -1,6 +1,8 @@
-import MainIcon from "../ui/icons/MainIcon";
-import CheckOkIcon from "../ui/icons/CheckOkIcon";
-import CheckNotIcon from "../ui/icons/CheckNotIcon";
+import './CardsSection.scss'
+
+import MainIcon from "../../ui/icons/MainIcon";
+import CheckOkIcon from "../../ui/icons/CheckOkIcon";
+import CheckNotIcon from "../../ui/icons/CheckNotIcon";
 
 export const CardsSection = ({
   primaryColor,

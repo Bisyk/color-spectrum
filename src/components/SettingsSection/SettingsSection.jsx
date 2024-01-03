@@ -1,7 +1,7 @@
-import React from "react";
-import MoonIcon from "../ui/icons/MoonIcon";
-import SunIcon from "../ui/icons/SunIcon";
-import InfoIcon from "../ui/icons/InfoIcon";
+import './SettingsSection.scss'
+import MoonIcon from "../../ui/icons/MoonIcon";
+import SunIcon from "../../ui/icons/SunIcon";
+import InfoIcon from "../../ui/icons/InfoIcon";
 
 export const SettingsSection = ({
   themeColor,

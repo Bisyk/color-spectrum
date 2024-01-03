@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 import "./App.scss";
-import { CardsSection } from "./components/CardsSection";
-import { SettingsSection } from "./components/SettingsSection";
-import { Palette } from "./components/Palette";
-import { PalleteNames } from "./components/PalleteNames";
-import { CustomColors } from "./components/CustomColors";
-import { InfoModal } from "./components/InfoModal";
+import { CardsSection } from "./components/CardsSection/CardsSection";
+import { SettingsSection } from "./components/SettingsSection/SettingsSection";
+import { Palette } from "./components/Pallete/Palette";
+import { PalleteNames } from "./components/PalleteNames/PalleteNames";
+import { CustomColors } from "./components/CustomColors/CustomColors";
+import { InfoModal } from "./components/InfoModal/InfoModal";
 
 import getContrastRatio from "./utils/getContrastRatio";
 import * as pallete from "./data/pallete";

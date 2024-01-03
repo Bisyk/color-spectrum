@@ -1,4 +1,5 @@
-import ColorButton from "../ui/buttons/ColorButton";
+import ColorButton from "../../ui/buttons/ColorButton";
+import './Pallete.scss'
 
 export const Palette = ({
   pallete,

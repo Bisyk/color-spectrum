@@ -1,4 +1,5 @@
 import { createPortal } from "react-dom";
+import './InfoModal.scss'
 
 export const InfoModal = ({ modalIsOpen, onModalOpen }) => {
   return (

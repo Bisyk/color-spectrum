@@ -1,0 +1,24 @@
+.colors {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid gray;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    border: none;
+    max-width: max(100px, 100%);
+    height: 70px;
+    padding: 0px;
+  }
+  .bwsection button {
+    padding: 0;
+    height: 25%;
+  }
+  .bwsection {
+    border: 2px solid black;
+  }
+}

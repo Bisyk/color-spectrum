@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './CustomColors.scss'
 
 export const CustomColors = ({
   themeColor,
