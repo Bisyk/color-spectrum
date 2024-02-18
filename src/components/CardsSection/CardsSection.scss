@@ -6,8 +6,8 @@
     padding: 20px 0px;
     display: flex;
     .card {
-      width: 350px;
-      height: 200px;
+      max-width: 350px;
+      min-height: 200px;
       border-radius: 50px;
       margin: 0 50px;
       display: flex;
@@ -57,5 +57,43 @@
     height: 50px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .cardswrapper {
+
+
+    .contrastratio {
+      left: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .cardswrapper {
+    flex-direction: column;
+    .card__wrapper {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      .card {
+        margin: 0 20px;
+      }
+      .checkinfo {
+        flex-direction: row;
+      }
+    }
+    .contrastratio {
+      left: 60%;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .cardswrapper {
+    .contrastratio {
+      left: 65%;
+    }
   }
 }

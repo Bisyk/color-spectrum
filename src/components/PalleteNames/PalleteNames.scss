@@ -8,3 +8,11 @@
     font-weight: bold;
   }
 }
+
+@media only screen and (max-width: 810px) {
+  .palletenames {
+    p {
+      font-size: 0.5rem;
+    }
+  }
+}

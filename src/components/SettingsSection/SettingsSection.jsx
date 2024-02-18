@@ -1,7 +1,8 @@
+import InfoIcon from '../../assets/icons/InfoIcon';
+import MoonIcon from '../../assets/icons/MoonIcon';
+import SunIcon from '../../assets/icons/SunIcon';
 import './SettingsSection.scss'
-import MoonIcon from "../../ui/icons/MoonIcon";
-import SunIcon from "../../ui/icons/SunIcon";
-import InfoIcon from "../../ui/icons/InfoIcon";
+
 
 export const SettingsSection = ({
   themeColor,

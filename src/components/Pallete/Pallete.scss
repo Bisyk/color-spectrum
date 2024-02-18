@@ -22,3 +22,9 @@
     border: 2px solid black;
   }
 }
+
+@media only screen and (max-width: 810px) {
+  .colors{
+    gap: 0px
+  }
+}
